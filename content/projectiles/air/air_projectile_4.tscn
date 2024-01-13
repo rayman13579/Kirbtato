@@ -1,0 +1,149 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://projectiles/player_projectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/sprites/projectile_air_0001.png" type="Texture" id=2]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/sprites/projectile_air_0002.png" type="Texture" id=3]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/sprites/projectile_air_0003.png" type="Texture" id=4]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/sprites/projectile_air_0004.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 2 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.300623, 0.407038, 0.49217, 0.593265, 0.69968, 0.803435, 0.90719, 1.00296, 1.1, 1.19983, 1.29028, 1.39404, 1.49513, 1.59091, 1.7053, 1.80374, 1.90749 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ true ],
+"method": "set_physics_process"
+}, {
+"args": [  ],
+"method": "set_to_be_destroyed"
+} ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "fire_long"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.300623, 0.407038, 0.49217, 0.593265, 0.69968, 0.803435, 0.90719, 1.00296, 1.1, 1.19983, 1.29028, 1.39404, 1.49513, 1.59091, 1.7053, 1.80374, 1.90749 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ true ],
+"method": "set_physics_process"
+}, {
+"args": [  ],
+"method": "set_to_be_destroyed"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "fire_single"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ true ],
+"method": "set_physics_process"
+}, {
+"args": [  ],
+"method": "set_to_be_destroyed"
+} ]
+}
+
+[node name="AirProjectile" instance=ExtResource( 1 )]
+enable_physics_process = false
+rotation_speed = 0
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( 67, -3 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="Collision" parent="Hitbox" index="0"]
+visible = false
+position = Vector2( 71, 4 )
+scale = Vector2( 2.527, 2.372 )
+
+[node name="VisibilityNotifier2D" parent="." index="2"]
+position = Vector2( -1, -1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="4"]
+autoplay = "fire_single"
+anims/RESET = SubResource( 2 )
+anims/fire = SubResource( 1 )
+anims/fire_long = SubResource( 3 )
+anims/fire_single = SubResource( 4 )
+
+[editable path="Hitbox"]

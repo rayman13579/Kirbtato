@@ -6,11 +6,11 @@
 [ext_resource path="res://weapons/ranged/flamethrower/gas_small_flame_ignite_01.wav" type="AudioStream" id=4]
 [ext_resource path="res://weapons/ranged/flamethrower/gas_small_flame_ignite_02.wav" type="AudioStream" id=5]
 [ext_resource path="res://weapons/ranged/flamethrower/gas_med_flame_ignite_02.wav" type="AudioStream" id=6]
-[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/air_projectile.tscn" type="PackedScene" id=7]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/air_projectile_1.tscn" type="PackedScene" id=7]
 
 [resource]
 script = ExtResource( 1 )
-cooldown = 5
+cooldown = 2
 damage = 1
 accuracy = 1.0
 crit_chance = 0.0
