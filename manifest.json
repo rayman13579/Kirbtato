@@ -1,0 +1,21 @@
+{
+    "name": "Kirbtato",
+    "namespace": "Rayman",
+    "version_number": "1.0.0",
+    "description": "Kirby like character mod",
+    "website_url": "https://github.com/example/repo",
+    "dependencies": ["Darkly77-Brotils", "Darkly77-ContentLoader"],
+    "extra": {
+        "godot": {
+            "authors": ["Rayman"],
+            "tags": ["tag1", "tag2"],
+            "description_rich": "",
+            "optional_dependencies": [],
+            "load_before": [],
+            "incompatibilities": [],
+            "compatible_mod_loader_version": ["6.2.0"],
+            "compatible_game_version": ["1.2.3"],
+            "config_schema": {}
+        }
+    }
+}
