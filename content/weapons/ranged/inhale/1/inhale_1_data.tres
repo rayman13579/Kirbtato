@@ -5,7 +5,7 @@
 [ext_resource path="res://items/sets/fire/fire_set_data.tres" type="Resource" id=3]
 [ext_resource path="res://items/sets/heavy/heavy_set_data.tres" type="Resource" id=4]
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/inhale.tscn" type="PackedScene" id=5]
-[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/inhale_icon.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/kirbtato_inhale_icon.png" type="Texture" id=6]
 
 [resource]
 script = ExtResource( 2 )
