@@ -21,6 +21,10 @@ func _init() -> void:
 	ModLoaderMod.install_script_extension(ext_dir + "projectiles/player_projectile.gd")
 	#open mouth while shooting
 	ModLoaderMod.install_script_extension(ext_dir + "weapons/weapon.gd")
+	#limit shop to items
+	ModLoaderMod.install_script_extension(ext_dir + "singletons/item_service.gd")
+	#add custom effects
+	ModLoaderMod.install_script_extension(ext_dir + "singletons/run_data.gd")
 	
 	
 	ModLoaderMod.add_translation(trans_dir + "kirbtato.en.translation")

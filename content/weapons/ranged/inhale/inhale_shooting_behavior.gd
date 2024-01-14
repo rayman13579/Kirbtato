@@ -30,6 +30,12 @@ func shoot_projectile(rotation:float = _parent.rotation, knockback:Vector2 = Vec
 	)
 	projectile.rotation = rotation
 
+	var stat_range = Utils.get_stat("stat_range")
+	if stat_range > 0:
+		projectile.scale = projectile.scale * (1 + min(stat_range, 300) / 100)
+	if stat_range < 0:
+		projectile.scale = projectile.scale * max((1 + stat_range / 100), 0.2)
+
 	emit_signal("projectile_shot", projectile)
 
 func getCurrentScene()->PackedScene:
@@ -44,4 +50,3 @@ func getCurrentScene()->PackedScene:
 			return scene4
 		_:
 			return scene1
-			

@@ -13,15 +13,16 @@ func _ready()->void:
 func _process(_delta:float)->void:
 	._process(_delta)
 	
-	cooldown_timer += _delta
-	var mouth = getMouth()
+	if Utils.brotils_current_character_is("character_kirbtato"):
+		cooldown_timer += _delta
+		var mouth = getMouth()
 
-	if mouth:
-		if _is_shooting:
-			mouth.texture = texture_open
-			cooldown_timer = 0.0
-		elif cooldown_timer >= cooldown:
-			mouth.texture = texture_closed
+		if mouth:
+			if _is_shooting:
+				mouth.texture = texture_open
+				cooldown_timer = 0.0
+			elif cooldown_timer >= cooldown:
+				mouth.texture = texture_closed
 		
 func getMouth()->Sprite:
 	var player = Utils.brotils_get_player()

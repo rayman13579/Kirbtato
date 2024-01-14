@@ -1,3 +1,6 @@
 keys,en
 CHARACTER_KIRBTATO,Kirbtato
 WEAPON_INHALE,Inhale
+EFFECT_RANGE_GROW,Projectile size scales with Range
+EFFECT_KNOCKBACK_REVERSE,Knockback is reversed
+EFFECT_SHOP_ITEMS,Shop is limited to items
