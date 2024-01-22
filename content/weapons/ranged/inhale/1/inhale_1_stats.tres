@@ -1,11 +1,7 @@
-[gd_resource type="Resource" load_steps=8 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://weapons/weapon_stats/ranged_weapon_stats.gd" type="Script" id=1]
-[ext_resource path="res://weapons/ranged/flamethrower/gas_med_flame_ignite_01.wav" type="AudioStream" id=2]
-[ext_resource path="res://weapons/ranged/flamethrower/lighter_gas_flame_ignite_02.wav" type="AudioStream" id=3]
-[ext_resource path="res://weapons/ranged/flamethrower/gas_small_flame_ignite_01.wav" type="AudioStream" id=4]
-[ext_resource path="res://weapons/ranged/flamethrower/gas_small_flame_ignite_02.wav" type="AudioStream" id=5]
-[ext_resource path="res://weapons/ranged/flamethrower/gas_med_flame_ignite_02.wav" type="AudioStream" id=6]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/silence.wav" type="AudioStream" id=2]
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/projectiles/air/air_projectile_1.tscn" type="PackedScene" id=7]
 
 [resource]
@@ -21,7 +17,7 @@ knockback = 5
 effect_scale = 1.0
 scaling_stats = [ [ "stat_elemental_damage", 1.0 ] ]
 lifesteal = 0.0
-shooting_sounds = [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 3 ) ]
+shooting_sounds = [ ExtResource( 2 ) ]
 sound_db_mod = -5
 is_healing = false
 recoil = 0
