@@ -8,5 +8,5 @@ resource_name = "kirbtato_mouth_closed"
 script = ExtResource( 1 )
 sprite = ExtResource( 2 )
 position = 8
-display_priority = 0
+display_priority = 4
 depth = 250.0

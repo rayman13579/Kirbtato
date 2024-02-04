@@ -16,8 +16,8 @@ func _init() -> void:
 	
 	#change player sprite
 	ModLoaderMod.install_script_extension(ext_dir + "entities/units/player/player.gd")
-	#keep projectile position at mouth
-	ModLoaderMod.install_script_extension(ext_dir + "projectiles/player_projectile.gd")
+	#moved to air_projectile.gd #keep projectile position at mouth
+	#	ModLoaderMod.install_script_extension(ext_dir + "projectiles/player_projectile.gd")
 	#moved to inhale_shooting_behaviour.gd 	#open mouth while shooting
 	#	ModLoaderMod.install_script_extension(ext_dir + "weapons/weapon.gd")
 	#limit shop to items

@@ -1,7 +1,5 @@
 extends "res://projectiles/player_projectile.gd"
 
-
-
 func _physics_process(delta)->void:
 	._physics_process(delta)
 	if Utils.brotils_has_weapon_any_tier("weapon_inhale"):

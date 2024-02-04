@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=8 format=2]
 
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/1/inhale_1_stats.tres" type="Resource" id=1]
 [ext_resource path="res://items/global/weapon_data.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/1/knockback_reverse_effect.tres" type="Resource" id=4]
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/inhale.tscn" type="PackedScene" id=5]
 [ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/kirbtato_inhale_icon.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/Rayman-Kirbtato/content/weapons/ranged/inhale/1/increase_knockback_with_range_effect.tres" type="Resource" id=7]
 
 [resource]
 script = ExtResource( 2 )
@@ -15,7 +16,7 @@ icon = ExtResource( 6 )
 name = "WEAPON_INHALE"
 tier = 0
 value = 56
-effects = [ ExtResource( 3 ), ExtResource( 4 ) ]
+effects = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 7 ) ]
 tracking_text = ""
 weapon_id = "weapon_inhale"
 type = 1

@@ -30,13 +30,13 @@ func _process(_delta:float)->void:
 	sound_timer += _delta
 	cooldown_timer += _delta
 	var mouth = getMouth()
-	
-	if _parent._is_shooting and sound_timer >= 0.15:
-		var sound_to_play = sound_loop if mouth.texture == mouth_texture_open else sound_start
-		SoundManager.play(sound_to_play, _parent.current_stats.sound_db_mod)
-		sound_timer = 0
 
 	if mouth:
+		if _parent._is_shooting and sound_timer >= 0.15:
+			var sound_to_play = sound_loop if mouth.texture == mouth_texture_open else sound_start
+			SoundManager.play(sound_to_play, _parent.current_stats.sound_db_mod)
+			sound_timer = 0
+
 		if _parent._is_shooting:
 			mouth.texture = mouth_texture_open
 			cooldown_timer = 0.0
